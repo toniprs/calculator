@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <script type="text/javascript" src="kalkulator.js"></script>
+    <link rel="stylesheet" type="text/css" href="kalkulator.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="formx"> 
+<h3 style="font-family:Verdana, Geneva, sans-serif" align="center"></h3>
+<table style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; font-family:Verdana, Geneva, sans-serif; font-size:12px" cellpadding="5" cellspacing="5" align="center">
+  <tr>
+    
+    <td><input  type="number" size=4  name="a" value="10"  ></td>
+    <td ><input type="checkbox"  name="valid" value="10" onclick="Update(this);"></td>
+
+  </tr>
+  <tr>
+    
+    <td><input  type="number" size=4 name="b" value="2" ></td>
+    <td ><input type="checkbox" name="valid" value="2"  onclick="Update(this);"></td>
+
+  </tr>
+  <tr>
+    
+    <td><input  type="number" size=4  name="c" value="5" ></td>
+    <td ><input type="checkbox" name="valid"   value="5" onclick="Update(this);"></td>
+
+  </tr>
+  <tr>
+    <td colspan="3" height="30">
+<input  type="button" value="  +  " onClick="tambah(this.form)">  
+<input type="button" value="  -  " onClick="kurang(this.form)">  
+<input  type="button" value="  x  " onClick="kali(this.form)">  
+<input type="button" value="  /  " onClick="bagi(this.form)">  
+  </tr>
+
+   <tr>
+    <td>Hasil <input type="number" id="total" value=0 name="hasil"></td>
+  </tr>
+</table>
+</form>
+</body>
+
+
+</html>
